@@ -13,11 +13,13 @@ const discountOver=( (price * 40) / 100 )
 
 
 if (age < 18) {
-   console.log(price - discountMinor );
+    document.getElementById("final-price").innerHTML= (price - discountMinor.toPrecision(2))
 }
 else if(age > 65){
-    console.log((price - discountOver));
+    // console.log((price - discountOver));
+    document.getElementById("final-price").innerHTML= (price - discountOver.toPrecision(2))
 }
 else{
-    console.log(price)
+    document.getElementById("final-price").innerHTML= price.toPrecision(2)
 }
+
