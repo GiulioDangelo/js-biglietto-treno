@@ -16,7 +16,6 @@ if (age < 18) {
     document.getElementById("final-price").innerHTML= (price - discountMinor.toPrecision(2))
 }
 else if(age > 65){
-    // console.log((price - discountOver));
     document.getElementById("final-price").innerHTML= (price - discountOver.toPrecision(2))
 }
 else{
