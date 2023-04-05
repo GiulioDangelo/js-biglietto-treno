@@ -18,6 +18,9 @@ if (age < 18) {
 else if(age > 65){
     document.getElementById("final-price").innerHTML= (price - discountOver.toPrecision(2))
 }
+else if(isNaN(age) || isNaN(km)){
+    document.getElementById("final-price").innerHTML= "please,enter a numbers"
+}
 else{
     document.getElementById("final-price").innerHTML= price.toPrecision(2)
 }
