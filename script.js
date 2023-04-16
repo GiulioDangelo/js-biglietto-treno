@@ -13,15 +13,15 @@ const discountOver=( (price * 40) / 100 )
 
 
 if (age < 18) {
-    document.getElementById("final-price").innerHTML= (price - discountMinor.toPrecision(2))
+    document.getElementById("final-price").innerHTML= (price - discountMinor.toFixed(2))
 }
 else if(age > 65){
-    document.getElementById("final-price").innerHTML= (price - discountOver.toPrecision(2))
+    document.getElementById("final-price").innerHTML= (price - discountOver.toFixed(2))
 }
 else if(isNaN(age) || isNaN(km)){
-    document.getElementById("final-price").innerHTML= "please,enter a numbers"
+    document.getElementById("final-price").innerHTML= "please,enter a number"
 }
 else{
-    document.getElementById("final-price").innerHTML= price.toPrecision(2)
+    document.getElementById("final-price").innerHTML= price.toFixed(2)
 }
 
